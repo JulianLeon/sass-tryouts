@@ -1,0 +1,84 @@
+// Fading Animations
+
+
+.has-fade {
+    visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+  }
+  to {
+      visibility: visible;
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 400ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+      visibility: visible;
+      opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fade-out 400ms ease-in-out forwards;
+}
+
+
+
+// Moving Animations
+
+@keyframes fade-in-right {
+  from {
+    transform: translateX(10rem);
+    opacity: 0;
+  }
+  90% {
+    transform: translateX(0.5rem);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-right {
+  animation: fade-in-right 1000ms ease-in-out forwards
+}
+
+@keyframes fade-in-left {
+  from {
+    transform: translateX(-10rem);
+    opacity: 0;
+  }
+ 90% {
+   transform: translateX(-0.5rem);
+   opacity: 0.8;
+ }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fade-in-left {
+  animation: fade-in-left 1000ms ease-in-out forwards
+}
+
