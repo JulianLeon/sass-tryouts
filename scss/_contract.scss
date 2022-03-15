@@ -1,0 +1,44 @@
+section#vertrag-section-a {
+    padding: 2em;
+    text-align: center;
+
+    .vertrag-download {
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+
+        @include breakpoint-up(medium) {
+            
+            
+        }
+
+        
+        @include breakpoint-up(medium) {
+            // padding: 0 10rem;
+        }
+        
+        a {
+            flex-basis: 300px;
+            flex-shrink: 0.5;
+            flex-grow: 1;
+            margin: 0rem;
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+
+            figcaption {
+                color: $darkGray;
+
+                font-size: $font-s;
+                font-weight: 300;
+            }
+        }
+
+
+    }
+
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Gemüsekiste</title>
+  </head>
+  <body>
+    <!-- *********** Header ************* -->
+    <header class="header">
+      <div class="overlay has-fade hide-for-desktop"></div>
+      <nav class="container flex flex-ai-c flex-js-c">
+        <a href="#" class="header__logo">
+          <img src="images/Logoedited.png" alt="Easybank" />
+        </a>
+
+        <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="header__links hide-for-mobile">
+          <a href="/index.html">Startseite</a>
+          <a href="/box.html">Gemüsekiste</a>
+          <a href="/contract.html">Vertrag</a>
+          <a href="/donnerwurzn.html">Solawi Donnerwurz&rsquo;n</a>
+        </div>
+
+        <div class="social-icons hide-for-mobile">
+          <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="header__menu hide-for-desktop has-fade">
+        <a href="/index.html">Startseite</a>
+        <a href="/box.html">Gemüsekiste</a>
+        <a href="/contract.html">Vertrag</a>
+        <a href="/donnerwurzn.html">Solawi Donnerwurz&rsquo;n</a>
+
+        <div class="social-icons-mobile hide-for-desktop">
+          <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Box Hero Section -->
+
+      <section id="box-section-a">
+        <div class="box-hero__image">
+          <div class="box-hero__image-overlay"></div>
+          <h1 class="box-hero__image-text">Gemüse Box</h1>
+        </div>
+      </section>
+
+      <!-- Box Text Section -->
+      <section id="box-section-b">
+        <div class="box-text container grid">
+          <p>
+            Holen Sie sich 1x wöchentlich eine saisonale (Mai-Januar)
+            Gemüsekiste aus eigenem, nachhaltigen Anbau an einer unserer
+            Abholstationen in der Region ab. <br /><br />
+            Wir bieten eine Vielfalt an unbehandeltem Gemüse mit
+            unvergleichlichem Geschmack.
+          </p>
+
+          <h4>Wie funktionierts?</h4>
+        </div>
+        <div class="box-info__container">
+          <div class="box-info__container-column">
+            <img src="images/migeon-icon.jpg" alt="" />
+            <p>Entscheiden Sie sich für eine Kistengröße.</p>
+            <p>
+              Entweder die Kiste "Single" für 12€/Woche oder die "Familienkiste"
+              für 24€/Woche.
+            </p>
+            <p>Ab dem Spätsommer gibt es zusätzlich Kartoffeln.</p>
+          </div>
+          <div class="box-info__container-column">
+            <img src="images/contract-icon.jpg" alt="" />
+            <p>
+              Wählen Sie den entsprechenden Vertrag aus, lesen Sie ihn sich in
+              Ruhe durch und schicken Sie ihn uns ausgefüllt zu.
+            </p>
+            <p>Gestalten Sie Ihre Umgebung aktiv mit!</p>
+            <a href="contract.html" class="box-info__container-btn">Zum Vertrag</a>
+          </div>
+          <div class="box-info__container-column">
+            <img src="images/box-icon.jpg" alt="" />
+            <p>
+              Jede Woche liegt das Gemüse an einer unserer Abholstationen in
+              Simbach oder Pfarrkirchen bereit.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- *********** Footer ************* -->
+    <footer class="footer">
+      <div class="footer-logo hide-for-mobile">
+        <img src="images/Logoedited.png" alt="" />
+      </div>
+
+      <div class="footer-contact">
+        <ul>
+          <li>Solawi Donnerwurzn</li>
+          <li>Simbach, 84359</li>
+          <li>Deutschland</li>
+          <li>+49 64654 65465</li>
+          <li><a href="#">solawi@gmail.com</a></li>
+        </ul>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <ul>
+          <li><a href="/index.html">Startseite</a></li>
+          <li><a href="/box.html">Gemüsekiste</a></li>
+          <li><a href="/contract.html">Vertrag</a></li>
+          <li><a href="/donnerwurzn.html">Solawi Donnerwurzn</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

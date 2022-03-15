@@ -1,0 +1,125 @@
+section#main-section-b {
+    background-color: $lightGreen;
+  padding: 2em;
+
+   
+
+  @include breakpoint-up(large) {
+      padding: 5em 0;
+  }
+
+  ul {
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+ 
+
+    @include breakpoint-up(large) {
+      flex-direction: row; 
+      align-items: flex-start;
+    }
+
+   
+
+        li {
+          height: 100%;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+           margin-bottom: 2rem; 
+           
+            
+          @include breakpoint-up(medium) {
+            padding: 3rem;
+          }
+           
+
+                &-image {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    
+                    img {
+                      width: calc(50px + 50vw);
+                      max-width: 100%;
+                      height: calc(50px + 50vw);
+                      object-fit: cover;
+                     
+                      border-radius: 50%;
+                      box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.5);
+        
+                        // @include breakpoint-up(small) {
+                        //     width: 250px;
+                        //     height: 250px;
+                        // }
+
+                      @include breakpoint-up(medium) {
+                        margin-bottom: 0;
+                        width: 250px;
+                        height: 250px;
+                      }
+        
+                    }
+                }
+
+
+            .card-content {
+              text-align: center;
+              @include breakpoint-up(large) {
+                  max-width: 500px;
+                    padding: 1rem;
+                    // width: 60%;
+                                        
+                }
+
+                
+            }
+        }
+
+    }
+  }
+
+
+
+section#main-section-c {
+    padding: 3rem 2rem;
+    text-align: center;
+    line-height: 1.5;
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+// Smooth Animation Settings
+
+#main-section-b ul li:nth-of-type(1n) img {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  
+  #main-section-b ul li:nth-of-type(2n) img {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+#main-section-c div {
+    transform: rotateX(90deg);
+    opacity: 0;
+}

@@ -1,0 +1,86 @@
+
+section.solawi {
+   
+    padding: 3rem 2rem;
+    @include breakpoint-up(medium) {
+        padding: 6rem;
+    }
+}
+
+section.solawi:nth-child(1n) {
+    background-color: #FAFAF0;
+}
+section.solawi:nth-child(2n) {
+    background-color: #fbfad3;
+    
+}
+
+section.solawi img {
+    filter: drop-shadow(0 0.3rem 0.3rem rgba(0,0, 0, 0.3));
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 6px;
+    
+}
+
+section.solawi img.solawi-icon {
+    width: 60px;
+    margin-bottom: 0.3rem;
+    filter: drop-shadow(0 0.3rem 0.3rem rgba(0,0, 0, 0.2));
+    
+}
+
+section.solawi figure {
+    margin-bottom: 3rem;
+}
+
+// Section A
+section#solawi-section-a {
+    text-align: center;
+    opacity: 0;
+    transform: translateX(5rem);
+
+    
+    
+
+}
+
+// Section B
+section#solawi-section-b {
+    opacity: 0;
+    transform: translateX(-5rem);
+    text-align: center;
+    
+
+} 
+
+
+// Section C
+section#solawi-section-c {
+    text-align: center;
+    opacity: 0;
+    transform: translateX(5rem);
+
+    ul {
+        padding: 0;
+    }
+    
+    
+}
+
+// Section D
+section#solawi-section-d {
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-5rem);
+    
+
+    div {
+        
+
+        blockquote {
+            font-weight: 500;
+            font-style: oblique;
+        }
+    }
+}
